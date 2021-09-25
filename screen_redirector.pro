@@ -6,6 +6,7 @@
 TEMPLATE = app
 CONFIG += console c++17
 TARGET = screen_redirector
+QT += gui
 
 # TODO: more generic settings
 INCLUDEPATH = .
@@ -21,6 +22,7 @@ win32 {
   LIBS += -L"C:/Program Files (x86)/Windows Kits/10/Lib/10.0.19041.0/um/x64"
   LIBS += -L"C:/Program Files (x86)/Windows Kits/10/Lib/10.0.19041.0/ucrt/x64"
   LIBS += -L"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30037/lib/x64"
+  LIBS += -L"C:/Program Files (x86)/Windows Kits/10/Lib/10.0.19041.0/um/x64" -lGdi32 -lUser32
 }
 LIBS += -L"C:/Users/bianliangpai/Downloads/qt-everywhere-src-6.1.3/build/qtbase/lib" -lQt6Cored -lQt6Guid -lQt6Widgetsd
 
